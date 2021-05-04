@@ -11,7 +11,10 @@
 
 <script>
 export default {
-  name: 'App'
+  name: 'App',
+  mounted() {
+    api.test().then(res => console.log(res.data));
+  }
 }
 </script>
 
